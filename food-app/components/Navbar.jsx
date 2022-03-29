@@ -23,8 +23,8 @@ const Navbar = () => {
 
 
             </div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
+            <div className={styles.item}>center</div>
+            <div className={styles.item}>right</div>
         </div>
     )
 }
