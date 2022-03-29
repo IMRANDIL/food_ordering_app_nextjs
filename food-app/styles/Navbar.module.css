@@ -22,6 +22,11 @@
     flex: 3;
 }
 
+
+.item:last-child{
+justify-content: flex-end;
+}
+
 .callButton{
     background-color: white;
     border-radius: 50%;
@@ -42,4 +47,20 @@
 .texts:last-child{
     font-size: 20px;
     font-weight: bold;
+}
+
+
+.list{
+    padding: 0;
+    display: flex;
+
+    align-items: center;
+
+    list-style: none;
+    color: white;
+}
+
+.listItem{
+    margin: 20px;
+    font-weight: 500;
 }
