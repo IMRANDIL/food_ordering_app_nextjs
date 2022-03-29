@@ -2,11 +2,11 @@ import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
-const Layout = () => {
+const Layout = ({ children }) => {
     return (
         <>
             <Navbar />
-            Home
+            {children}
             <Footer />
         </>
     )
