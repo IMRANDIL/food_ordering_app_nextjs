@@ -17,8 +17,8 @@ const Featured = () => {
 
 
     const images = [
-        '/img/featured.png',
-        '/img/featured2.png',
+        '/img/featured1.jpg',
+        '/img/featured2.jpg',
         '/img/featured3.png'
     ]
 
@@ -32,11 +32,14 @@ const Featured = () => {
 
     return (
         <div className={styles.container}>
-            <Image src='/img/arrowl.png' alt='arrowl-img' />
+            <div className={styles.arrowContainer} style={{ left: 0 }}>
+                <Image src='/img/arrowl.png' alt='arrowl-img' layout='fill' />
+            </div>
+
             <div className={styles.wrapper}>
                 <div className={styles.imgContainer}>
-                    {images.map((img) => (
-                        <Image src={img} alt='featured-img' />
+                    {images.map((img, i) => (
+                        <Image key={i} src={img} alt='featured-img' layout='fill' />
                     ))}
 
                 </div>
@@ -45,7 +48,10 @@ const Featured = () => {
 
 
             </div>
-            <Image src='/img/arrowr.png' alt='arrowr-img' />
+            <div className={styles.arrowContainer} style={{ right: 0 }}>
+                <Image src='/img/arrowr.png' alt='arrowr-img' layout='fill' />
+            </div>
+
         </div>
     )
 }
